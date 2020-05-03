@@ -1,0 +1,81 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family: "Raleway thin", sans-serif;
+  background-color: #eeeeee;
+  
+}
+.counter-main{
+  padding: 16px;
+}
+.stats{
+}
+.ytName{
+  font-size: 50px;
+  width: 100%;
+}
+.ytImage{
+width: 60%;
+border-radius: 50%;
+position: relative;
+left: 25%;
+}
+img{
+box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.5);
+border-radius: 50%;
+}
+.ytSubs{
+font-size: 100px;
+font-weight: bolder;
+}
+.ytLink{
+
+}
+
+#ytView {
+  font-size: 50px;
+}
+
+#ytVideo {
+  font-size: 50px;
+}
+
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+.subscriber-text{
+  font-size: 30px;
+}
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+button:hover, a:hover {
+  opacity: 0.8;
+}
