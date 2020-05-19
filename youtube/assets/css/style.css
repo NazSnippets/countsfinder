@@ -29,7 +29,16 @@ font-size: 100px;
 font-weight: bolder;
 }
 .ytLink{
-
+  -webkit-appearance: none;
+  background-color: red;
+  border: none;
+  border-radius: 2px;
+  color: black;
+  padding: 1%;
+  width: 15%;
+  font-size: 2.5vw;
+  top: 28%;
+  display: none;
 }
 
 #ytView {
@@ -40,42 +49,76 @@ font-weight: bolder;
   font-size: 50px;
 }
 
-
 input[type=text] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
 }
+
 input[type=text]:focus {
   border: 3px solid #555;
 }
+
 .subscriber-text{
   font-size: 30px;
 }
 
 
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 600px;
-  margin: auto;
-  text-align: center;
+/* side bar */
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
 }
 
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4CAF50;
   color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
 }
 
-button:hover, a:hover {
-  opacity: 0.8;
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
 }

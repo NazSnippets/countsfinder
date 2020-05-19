@@ -6,7 +6,7 @@ var key = myKeys[Math.floor(Math.random() * myKeys.length)];
 $(document).ready( function() {
 
     var chanName = "";
-    loadChannel('UCAW-NpUFkMyCNrvRSSGIvDQ');
+    loadChannel('UCAW-NpUFkMyCNrvRSSGIvDQ  reove');
     function loadChannel(name) {
 
         chanName = name;

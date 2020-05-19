@@ -1,0 +1,2 @@
+link to get channel with Query
+https://www.googleapis.com/youtube/v3/search?part=snippet&q=Tseries&type=channel&maxResults=1&key=AIzaSyC1Dz3mDyUn7ftZ7Gaj36ILi_IzkR1jnEY 
