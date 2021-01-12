@@ -6,7 +6,7 @@ var key = myKeys[Math.floor(Math.random() * myKeys.length)];
 $(document).ready( function() {
 
     var chanName = "";
-    loadChannel('UCAW-NpUFkMyCNrvRSSGIvDQ  reove');
+    loadChannel('UCAW-NpUFkMyCNrvRSSGIvDQ');
     function loadChannel(name) {
 
         chanName = name;
@@ -27,7 +27,7 @@ $(document).ready( function() {
     }
 
     setInterval(function () {
-        var url = 'https://www.googleapis.com/youtube/v3/channels?part=statistics&id='+chanName+'&key='+keyManager.key;
+        var url = 'https://www.googleapis.com/youtube/v3/channels?part=statistics&id='+chanName+'&key='+key;
         $.getJSON(url, function (data) {
             $('#ytSubs').html(data.items[0].statistics.subscriberCount);
             $('#ytVideo').html(data.items[0].statistics.videoCount);
